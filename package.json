@@ -1,13 +1,14 @@
 {
-  "name": "autochina",
+  "name": "autochina-monorepo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+    "start:back": "npm run start:dev --workspace=autochina-backend",
+    "start:front": "npm run start --workspace=autochina-frontend",
+    "install:all": "npm install && npm install --workspace=autochina-backend && npm install --workspace=autochina-frontend"
+  }
 }

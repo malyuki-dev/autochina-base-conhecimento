@@ -1,0 +1,125 @@
+﻿[33mÔØ»[39m Building...
+[32mÔ£ö[39m Building...
+Application bundle generation failed. [8.659 seconds]
+
+node.exe : 
+[1m[31m[31mX [41;31m[
+[41;97mERROR[41;31m][0
+m [1mTS-991010: 
+'imports' must be an 
+array of components, 
+directives, pipes, or 
+NgModules.
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo       
+       : NotSpecified:   
+  ([1m[31m[31mX...,   
+  or NgModules.:Strin    
+g) [], RemoteExcepti    
+on
+    + FullyQualifiedErro 
+   rId : NativeCommandE  
+  rror
+ 
+  Value could not be 
+determined 
+statically.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/app.ts:6:26:
+[37m      6 Ôöé   
+imports: [RouterOutlet, 
+[32mRouterLink[37m, 
+RouterLinkActive],
+        ÔòÁ              
+             
+[32m~~~~~~~~~~[0m
+
+  Unknown reference.
+
+    src/app/app.ts:6:26:
+[37m      6 Ôöé   
+imports: [RouterOutlet, 
+[32mRouterLink[37m, 
+RouterLinkActive],
+        ÔòÁ              
+             
+[32m~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mE
+RROR[41;31m][0m 
+[1mTS2304: Cannot find 
+name 'RouterLink'.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/app.ts:6:26:
+[37m      6 Ôöé   
+imports: [RouterOutlet, 
+[32mRouterLink[37m, 
+RouterLinkActive],
+        ÔòÁ              
+             
+[32m~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mE
+RROR[41;31m][0m 
+[1mTS-991010: 'imports' 
+must be an array of 
+components, directives, 
+pipes, or NgModules.
+  Value could not be 
+determined 
+statically.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/app.ts:6:38:
+[37m      6 Ôöé   
+imports: [RouterOutlet, 
+RouterLink, [32mRouterLi
+nkActive[37m],
+        ÔòÁ              
+                         
+[32m~~~~~~~~~~~~~~~~[0m
+
+  Unknown reference.
+
+    src/app/app.ts:6:38:
+[37m      6 Ôöé   
+imports: [RouterOutlet, 
+RouterLink, [32mRouterLi
+nkActive[37m],
+        ÔòÁ              
+                         
+[32m~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mE
+RROR[41;31m][0m 
+[1mTS2304: Cannot find 
+name 
+'RouterLinkActive'.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/app.ts:6:38:
+[37m      6 Ôöé   
+imports: [RouterOutlet, 
+RouterLink, [32mRouterLi
+nkActive[37m],
+        ÔòÁ              
+                         
+[32m~~~~~~~~~~~~~~~~[0m
+
+[39m[22m

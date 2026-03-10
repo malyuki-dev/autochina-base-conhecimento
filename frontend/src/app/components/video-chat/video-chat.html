@@ -1,0 +1,78 @@
+<div class="gemini-container">
+  <!-- Sidebar lateral integrada -->
+  <aside class="video-sidebar">
+    <div class="sidebar-header">
+      <span class="sparkle">✨</span>
+      <h2>Catálogo IA</h2>
+    </div>
+
+    <div class="sync-banner">
+      <p>Certifique-se que os vídeos estão sincronizados com a IA.</p>
+      <button (click)="syncVideos()" [disabled]="syncing" class="sync-btn-small">
+        {{ syncing ? 'Sincronizando...' : 'Sincronizar Base' }}
+      </button>
+    </div>
+
+    <div class="video-list-scroll">
+      <div *ngFor="let video of videos" class="video-item" [class.active]="selectedVideo?.id === video.id"
+        (click)="selectVideo(video)">
+        <div class="video-icon">📽️</div>
+        <div class="video-info">
+          <span class="title">{{ video.title }}</span>
+          <span class="meta">{{ video.category }}</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Área de Chat Principal -->
+  <main class="chat-main">
+    <header class="chat-header" *ngIf="selectedVideo">
+      <div class="video-badge">Analisando: {{ selectedVideo.title }}</div>
+    </header>
+
+    <div class="messages-container" #scrollMe>
+      <div *ngIf="!selectedVideo" class="welcome-screen">
+        <div class="gemini-logo">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z" fill="url(#gemini-grad)" />
+            <defs>
+              <linearGradient id="gemini-grad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#4B90FF" />
+                <stop offset="1" stop-color="#FF5D9E" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <h1>Olá! Sou seu Assistente Gemini</h1>
+        <p>Selecione um vídeo ao lado para começarmos a análise inteligente.</p>
+      </div>
+
+      <div *ngFor="let msg of messages" class="message-wrapper" [class.user]="msg.role === 'user'">
+        <div class="avatar" *ngIf="msg.role === 'ai'">✨</div>
+        <div class="message-bubble">
+          {{ msg.text }}
+        </div>
+      </div>
+
+      <div *ngIf="loading" class="typing-indicator">
+        <div class="dots"><span></span><span></span><span></span></div>
+        <p>Gemini está analisando o vídeo...</p>
+      </div>
+    </div>
+
+    <footer class="input-area" [class.disabled]="!selectedVideo">
+      <div class="input-wrapper">
+        <input type="text" [(ngModel)]="question" (keyup.enter)="askQuestion()"
+          placeholder="Pergunte algo sobre o vídeo..." [disabled]="!selectedVideo || loading">
+        <button (click)="askQuestion()" [disabled]="!selectedVideo || !question.trim() || loading" class="send-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 2L11 13M22 2L15 22L11 13L2 9L22 2Z" />
+          </svg>
+        </button>
+      </div>
+      <p class="disclaimer">A IA pode fornecer informações imprecisas. Verifique detalhes importantes no vídeo original.
+      </p>
+    </footer>
+  </main>
+</div>

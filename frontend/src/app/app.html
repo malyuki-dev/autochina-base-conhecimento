@@ -1,0 +1,48 @@
+<div class="flex h-screen overflow-hidden bg-background text-white w-full">
+  <!-- Sidebar Navigation responsivo em tela -->
+  <app-sidebar [isOpen]="isSidebarOpen" (closeSidebar)="toggleSidebar()"
+    class="z-[60] relative transition-all"></app-sidebar>
+
+  <!-- Main Content Area -->
+  <main
+    class="flex-1 overflow-y-auto relative flex flex-col h-full bg-background main-content-mobile-offset hide-scrollbar">
+
+    <!-- Fundo gradiente cópia fiel do tailwind React -->
+    <div class="absolute inset-0 radial-gradient-custom pointer-events-none z-0"></div>
+
+    <!-- Header Mobile / Topo da Área Main -->
+    <div class="flex items-center p-4 border-b border-white-10 glass-header z-30 sticky top-0">
+      <button (click)="toggleSidebar()"
+        class="p-2 -ml-2 text-gray-400 hover:text-white rounded-lg hover:bg-white-5 transition-colors absolute left-4 z-50 md:flex">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-menu">
+          <line x1="4" x2="20" y1="12" y2="12" />
+          <line x1="4" x2="20" y1="6" y2="6" />
+          <line x1="4" x2="20" y1="18" y2="18" />
+        </svg>
+      </button>
+
+      <!-- Update: Using DealerNet logo design as an SVG with text gradient, similar to sidebar -->
+      <a routerLink="/" class="flex items-center gap-2 overflow-hidden ml-10 md:ml-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-library text-primary shrink-0">
+          <path d="m16 6 4 14" />
+          <path d="M12 6v14" />
+          <path d="M8 8v12" />
+          <path d="M4 4v16" />
+        </svg>
+        <h1 class="text-2xl font-bold text-gradient flex items-center gap-2 whitespace-nowrap">
+          DealerNet
+        </h1>
+        <span class="text-gray-400 font-medium text-lg hidden sm:block">/ Autochina</span>
+      </a>
+    </div>
+
+    <!-- Área de Rotas do Conteúdo Principal -->
+    <div class="relative z-10 w-full flex-1 flex flex-col overflow-x-hidden">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>

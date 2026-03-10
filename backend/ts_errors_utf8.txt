@@ -1,0 +1,60 @@
+﻿src/app.controller.spec.ts(1,37): error TS2307: Cannot find module '@nestjs/testing' or its corresponding type declarations.
+src/app.controller.spec.ts(5,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/app.controller.spec.ts(8,3): error TS2304: Cannot find name 'beforeEach'.
+src/app.controller.spec.ts(17,3): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/app.controller.spec.ts(18,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/app.controller.spec.ts(19,7): error TS2304: Cannot find name 'expect'.
+src/app.controller.spec.ts(19,28): error TS2339: Property 'getHello' does not exist on type 'AppController'.
+src/auth/auth.controller.spec.ts(1,37): error TS2307: Cannot find module '@nestjs/testing' or its corresponding type declarations.
+src/auth/auth.controller.spec.ts(4,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/auth/auth.controller.spec.ts(7,3): error TS2304: Cannot find name 'beforeEach'.
+src/auth/auth.controller.spec.ts(15,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/auth/auth.controller.spec.ts(16,5): error TS2304: Cannot find name 'expect'.
+src/auth/auth.service.spec.ts(1,37): error TS2307: Cannot find module '@nestjs/testing' or its corresponding type declarations.
+src/auth/auth.service.spec.ts(4,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/auth/auth.service.spec.ts(7,3): error TS2304: Cannot find name 'beforeEach'.
+src/auth/auth.service.spec.ts(15,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/auth/auth.service.spec.ts(16,5): error TS2304: Cannot find name 'expect'.
+src/gemini/gemini.controller.spec.ts(1,37): error TS2307: Cannot find module '@nestjs/testing' or its corresponding type declarations.
+src/gemini/gemini.controller.spec.ts(4,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/gemini/gemini.controller.spec.ts(7,3): error TS2304: Cannot find name 'beforeEach'.
+src/gemini/gemini.controller.spec.ts(15,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/gemini/gemini.controller.spec.ts(16,5): error TS2304: Cannot find name 'expect'.
+src/gemini/gemini.service.spec.ts(1,37): error TS2307: Cannot find module '@nestjs/testing' or its corresponding type declarations.
+src/gemini/gemini.service.spec.ts(4,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/gemini/gemini.service.spec.ts(7,3): error TS2304: Cannot find name 'beforeEach'.
+src/gemini/gemini.service.spec.ts(15,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/gemini/gemini.service.spec.ts(16,5): error TS2304: Cannot find name 'expect'.
+src/gemini/gemini.service.ts(2,29): error TS1479: The current file is a CommonJS module whose imports will produce 'require' calls; however, the referenced file is an ECMAScript module and cannot be imported with 'require'. Consider writing a dynamic 'import("@google/genai")' call instead.
+  To convert this file to an ECMAScript module, change its file extension to '.mts', or add the field `"type": "module"` to 'C:/Users/ResTIC16/Autochina/backend/package.json'.
+src/gemini/gemini.service.ts(18,17): error TS2353: Object literal may only specify known properties, and 'mimeType' does not exist in type 'UploadFileParameters'.
+src/gemini/gemini.service.ts(22,50): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+src/gemini/gemini.service.ts(27,50): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+src/gemini/gemini.service.ts(35,13): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+src/gemini/gemini.service.ts(61,20): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/gemini/gemini.service.ts(61,29): error TS6234: This expression is not callable because it is a 'get' accessor. Did you mean to use it without '()'?
+  Type 'String' has no call signatures.
+src/resources/resources.controller.spec.ts(1,37): error TS2307: Cannot find module '@nestjs/testing' or its corresponding type declarations.
+src/resources/resources.controller.spec.ts(4,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/resources/resources.controller.spec.ts(7,3): error TS2304: Cannot find name 'beforeEach'.
+src/resources/resources.controller.spec.ts(15,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/resources/resources.controller.spec.ts(16,5): error TS2304: Cannot find name 'expect'.
+src/resources/resources.service.spec.ts(1,37): error TS2307: Cannot find module '@nestjs/testing' or its corresponding type declarations.
+src/resources/resources.service.spec.ts(4,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/resources/resources.service.spec.ts(7,3): error TS2304: Cannot find name 'beforeEach'.
+src/resources/resources.service.spec.ts(15,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/resources/resources.service.spec.ts(16,5): error TS2304: Cannot find name 'expect'.
+src/users/users.service.spec.ts(1,37): error TS2307: Cannot find module '@nestjs/testing' or its corresponding type declarations.
+src/users/users.service.spec.ts(4,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/users/users.service.spec.ts(7,3): error TS2304: Cannot find name 'beforeEach'.
+src/users/users.service.spec.ts(15,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/users/users.service.spec.ts(16,5): error TS2304: Cannot find name 'expect'.
+test/app.e2e-spec.ts(1,37): error TS2307: Cannot find module '@nestjs/testing' or its corresponding type declarations.
+test/app.e2e-spec.ts(3,21): error TS2307: Cannot find module 'supertest' or its corresponding type declarations.
+test/app.e2e-spec.ts(4,21): error TS2307: Cannot find module 'supertest/types' or its corresponding type declarations.
+test/app.e2e-spec.ts(7,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+test/app.e2e-spec.ts(10,3): error TS2304: Cannot find name 'beforeEach'.
+test/app.e2e-spec.ts(19,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.

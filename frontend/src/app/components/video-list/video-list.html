@@ -1,0 +1,48 @@
+<div class="video-container">
+    <header class="section-header">
+        <h1>Catálogo de Treinamentos</h1>
+        <p>Acesse nossos vídeos tutoriais e treinamentos do sistema DealerNet.</p>
+    </header>
+
+    <div *ngIf="loading" class="loader-container">
+        <div class="spinner"></div>
+        <p>Carregando treinamentos...</p>
+    </div>
+
+    <div *ngIf="!loading && videos.length === 0" class="empty-state">
+        <div class="icon">📁</div>
+        <h3>Nenhum treinamento encontrado</h3>
+        <p>Parece que ainda não há vídeos cadastrados. Use a aba "Analista Gemini" para sincronizar novos conteúdos.</p>
+    </div>
+
+    <div *ngIf="!loading && videos.length > 0" class="video-grid">
+        <div *ngFor="let video of videos" class="video-card" (click)="openVideo(video)">
+            <div class="video-thumbnail">
+                <img [src]="'http://localhost:3000/assets/thumbnails/v' + video.id + '.jpg'"
+                    alt="Thumbnail {{ video.title }}" class="w-full h-full object-cover"
+                    (error)="$any($event.target).style.display='none'; placeholder.style.display='flex'">
+
+                <div class="overlay">
+                    <span class="play-icon">▶</span>
+                </div>
+                <!-- ID para referência caso a imagem real falhe -->
+                <div #placeholder class="placeholder-img" style="display: none;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M15 10l-6 3V7l6 3z" fill="currentColor" />
+                        <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="video-info">
+                <span class="category">{{ video.category }}</span>
+                <h3>{{ video.title }}</h3>
+                <p>{{ video.description || 'Assista a este treinamento para dominar as ferramentas do sistema.' }}
+                </p>
+                <div class="card-footer">
+                    <span class="date">{{ video.createdAt | date:'dd/MM/yyyy' }}</span>
+                    <button class="view-btn">Assistir Agora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

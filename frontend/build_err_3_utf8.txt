@@ -1,0 +1,178 @@
+﻿[33mÔØ»[39m Building...
+[32mÔ£ö[39m Building...
+Application bundle generation failed. [12.236 seconds]
+
+node.exe : 
+[1m[31m[31mX [41;31
+m[[41;97mERROR[41;31m
+][0m [1mNG5002: 
+Unexpected closing tag 
+"div". It may happen 
+when the tag has 
+already been closed by 
+another tag. For more 
+info see https://www.w3
+.org/TR/html5/syntax.ht
+ml#closing-elements-tha
+t-have-implied-end-tags
+[0m [1m[35m[plugin 
+angular-compiler][0m
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: ([1m[31m[31   
+ mX...r-compiler][    
+0m:String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+
+    src/app/components/
+video-chat/video-chat.h
+tml:36:0:
+[37m      36 Ôöé 
+[32m</div>[37m
+         ÔòÁ 
+[32m~~~~~~[0m
+
+  Error occurs in the 
+template of component 
+VideoChatComponent.
+
+    src/app/components/
+video-chat/video-chat.t
+s:10:15:
+[37m      10 Ôöé   
+templateUrl: [32m'./vi
+deo-chat.html'[37m,
+         ÔòÁ           
+     [32m~~~~~~~~~~~~~
+~~~~~~[0m
+
+
+[31mX [41;31m[[41;97
+mERROR[41;31m][0m 
+[1mNG5002: Unexpected 
+closing tag "main". It 
+may happen when the 
+tag has already been 
+closed by another tag. 
+For more info see https
+://www.w3.org/TR/html5/
+syntax.html#closing-ele
+ments-that-have-implied
+-end-tags[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/
+video-chat/video-chat.h
+tml:37:0:
+[37m      37 Ôöé 
+[32m</main>[37m
+         ÔòÁ 
+[32m~~~~~~~[0m
+
+  Error occurs in the 
+template of component 
+VideoChatComponent.
+
+    src/app/components/
+video-chat/video-chat.t
+s:10:15:
+[37m      10 Ôöé   
+templateUrl: [32m'./vi
+deo-chat.html'[37m,
+         ÔòÁ           
+     [32m~~~~~~~~~~~~~
+~~~~~~[0m
+
+
+[31mX [41;31m[[41;97
+mERROR[41;31m][0m 
+[1mNG5002: Unexpected 
+closing tag 
+"ng-template". It may 
+happen when the tag 
+has already been 
+closed by another tag. 
+For more info see https
+://www.w3.org/TR/html5/
+syntax.html#closing-ele
+ments-that-have-implied
+-end-tags[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/
+video-chat/video-chat.h
+tml:38:0:
+[37m      38 Ôöé [32m
+</ng-template>[37m
+         ÔòÁ 
+[32m~~~~~~~~~~~~~~[0m
+
+  Error occurs in the 
+template of component 
+VideoChatComponent.
+
+    src/app/components/
+video-chat/video-chat.t
+s:10:15:
+[37m      10 Ôöé   
+templateUrl: [32m'./vi
+deo-chat.html'[37m,
+         ÔòÁ           
+     [32m~~~~~~~~~~~~~
+~~~~~~[0m
+
+
+[31mX [41;31m[[41;97
+mERROR[41;31m][0m 
+[1mNG5002: Unexpected 
+closing tag "div". It 
+may happen when the 
+tag has already been 
+closed by another tag. 
+For more info see https
+://www.w3.org/TR/html5/
+syntax.html#closing-ele
+ments-that-have-implied
+-end-tags[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/
+video-chat/video-chat.h
+tml:39:0:
+[37m      39 Ôöé 
+[32m</div>[37m
+         ÔòÁ 
+[32m~~~~~~[0m
+
+  Error occurs in the 
+template of component 
+VideoChatComponent.
+
+    src/app/components/
+video-chat/video-chat.t
+s:10:15:
+[37m      10 Ôöé   
+templateUrl: [32m'./vi
+deo-chat.html'[37m,
+         ÔòÁ           
+     [32m~~~~~~~~~~~~~
+~~~~~~[0m
+
+[39m[22m

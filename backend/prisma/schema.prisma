@@ -1,0 +1,37 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Resource {
+  id            Int      @id @default(autoincrement())
+  title         String
+  description   String?
+  fileUrl       String
+  type          String
+  category      String
+  geminiFileUri String?
+  createdAt     DateTime @default(now())
+  steps         Step[]
+}
+
+model Step {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  time        String?
+  resourceId  Int
+  resource    Resource @relation(fields: [resourceId], references: [id], onDelete: Cascade)
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  role      String   @default("user")
+  createdAt DateTime @default(now())
+}

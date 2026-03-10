@@ -1,0 +1,25 @@
+src/app.controller.spec.ts(1,37): error TS2307: Cannot find module '@nestjs/testing' or its corresponding type declarations.
+src/app.controller.spec.ts(5,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/app.controller.spec.ts(8,3): error TS2304: Cannot find name 'beforeEach'.
+src/app.controller.spec.ts(17,3): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/app.controller.spec.ts(18,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/app.controller.spec.ts(19,7): error TS2304: Cannot find name 'expect'.
+src/app.controller.spec.ts(19,28): error TS2339: Property 'getHello' does not exist on type 'AppController'.
+src/app.controller.ts(3,10): error TS2724: '"@prisma/client"' has no exported member named 'ResourceType'. Did you mean 'Resource'?
+src/app.controller.ts(27,9): error TS2353: Object literal may only specify known properties, and 'type' does not exist in type '(Without<ResourceCreateInput, ResourceUncheckedCreateInput> & ResourceUncheckedCreateInput) | (Without<...> & ResourceCreateInput)'.
+src/resources/resources.controller.spec.ts(1,37): error TS2307: Cannot find module '@nestjs/testing' or its corresponding type declarations.
+src/resources/resources.controller.spec.ts(4,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/resources/resources.controller.spec.ts(7,3): error TS2304: Cannot find name 'beforeEach'.
+src/resources/resources.controller.spec.ts(15,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/resources/resources.controller.spec.ts(16,5): error TS2304: Cannot find name 'expect'.
+src/resources/resources.service.spec.ts(1,37): error TS2307: Cannot find module '@nestjs/testing' or its corresponding type declarations.
+src/resources/resources.service.spec.ts(4,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/resources/resources.service.spec.ts(7,3): error TS2304: Cannot find name 'beforeEach'.
+src/resources/resources.service.spec.ts(15,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/resources/resources.service.spec.ts(16,5): error TS2304: Cannot find name 'expect'.
+test/app.e2e-spec.ts(1,37): error TS2307: Cannot find module '@nestjs/testing' or its corresponding type declarations.
+test/app.e2e-spec.ts(3,21): error TS2307: Cannot find module 'supertest' or its corresponding type declarations.
+test/app.e2e-spec.ts(4,21): error TS2307: Cannot find module 'supertest/types' or its corresponding type declarations.
+test/app.e2e-spec.ts(7,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+test/app.e2e-spec.ts(10,3): error TS2304: Cannot find name 'beforeEach'.
+test/app.e2e-spec.ts(19,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.

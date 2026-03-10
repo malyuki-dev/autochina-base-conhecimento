@@ -1,0 +1,27 @@
+autochina-monorepo@1.0.0 C:\Users\ResTIC16\Autochina - Copy
+├─┬ @angular/forms@19.2.18 extraneous
+│ ├─┬ @angular/common@19.2.18
+│ │ └── @angular/core@19.2.18 deduped
+│ ├── @angular/core@19.2.18
+│ └─┬ @angular/platform-browser@19.2.18
+│   └── @angular/core@19.2.18 deduped
+├─┬ @angular/router@19.2.18 extraneous
+│ └── @angular/core@19.2.18 deduped
+└─┬ autochina-frontend@1.0.0 -> .\frontend
+  ├─┬ @angular/animations@19.2.18
+  │ └── @angular/core@19.2.18 deduped
+  ├─┬ @angular/common@21.1.5 invalid: "^19.1.0" from frontend
+  │ └── @angular/core@21.1.5 deduped invalid: "^19.1.0" from frontend
+  ├── @angular/core@21.1.5 invalid: "^19.1.0" from frontend
+  ├─┬ @angular/forms@21.1.5 invalid: "^19.1.0" from frontend
+  │ └── @angular/core@21.1.5 deduped invalid: "^19.1.0" from frontend
+  ├─┬ @angular/platform-browser-dynamic@19.2.18
+  │ └── @angular/core@19.2.18 deduped
+  ├─┬ @angular/platform-browser@21.1.5 invalid: "^19.1.0" from frontend
+  │ └── @angular/core@21.1.5 deduped invalid: "^19.1.0" from frontend
+  └─┬ @angular/router@21.1.5 invalid: "^19.1.0" from frontend
+    └── @angular/core@21.1.5 deduped invalid: "^19.1.0" from frontend
+
+npm error code ELSPROBLEMS
+npm error invalid: @angular/core@21.1.5 C:\Users\ResTIC16\Autochina - Copy\frontend\node_modules\@angular\core
+npm error A complete log of this run can be found in: C:\Users\ResTIC16\AppData\Local\npm-cache\_logs\2026-02-25T19_34_50_604Z-debug-0.log

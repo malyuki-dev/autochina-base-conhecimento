@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --color-background: #0B0F19;
+        --color-surface: #1A2235;
+        --color-primary: #3B82F6;
+        --color-secondary: #8B5CF6;
+        --color-accent: #10B981;
+    }
+
+    body {
+        background-color: var(--color-background);
+        color: #ffffff;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    ::selection {
+        background-color: rgba(59, 130, 246, 0.3);
+        /* primary 30% */
+    }
+}
+
+.bg-background {
+    background-color: var(--color-background);
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.radial-gradient-custom {
+    background: radial-gradient(ellipse at top right, rgba(59, 130, 246, 0.1), var(--color-background), var(--color-background));
+}
+
+.glass-header {
+    background-color: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.border-white-10 {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.hover\:bg-white-5:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(26, 34, 53, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(59, 130, 246, 0.5);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(59, 130, 246, 0.8);
+}
